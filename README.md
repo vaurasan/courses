@@ -1,2 +1,2 @@
 # courses
-My Haaga-Helia ITBBA courses 2024-2026
+My Haaga-Helia ITBBA course homeworks from 2024-2026 in finnish.
