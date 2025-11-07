@@ -1,5 +1,13 @@
 # Task 7: VM Provisioning
 
+### Task goals:
+
+- Use CLI commands to install application on VM from previous task
+- Update VM creation script, to run app install CLI commands as user data
+- Test public Internet access to VM and include screenshot about passing test to task README.txt
+
+---
+
 ### Upload the CloudFormation template "vpc-santeri-vauramo.yaml" to AWS Learner Lab Cloudshell
 
 ### Run the following CLI commands to create stack and keys, and hide the key from public:
