@@ -52,7 +52,7 @@ sudo tail -F /var/log/apache2/access.log
 ```
 Lokin lukemiseen löysin hyvän oloisen lähteen [Sumo logic](https://www.sumologic.com/blog/apache-access-log), sekä tietenkin [Apachen oma](https://httpd.apache.org/docs/2.4/logs.html) lokien ohje.
 
-![201](/kuvat/201.png)
+![201](kuvat/201.png)
 
 - **127.0.0.1** = clientin IP osoite, joka on tehnyt pyynnön palvelimelle.
 - **-** = ensimmäinen viiva on epäluotettava clientin määrittämä RFC 1413 identiteetti, johon ei tulisi luottaa muuta kuin tarkkaan hallituissa verkoissa. Apache ei yritä määrittää tätä, ellei *IdentityCheck* ole asetettu **On**-tilaan.
@@ -75,7 +75,7 @@ Kokeilen skannata localhost osoitetta:
 nmap -v -A 127.0.0.1 #Ohjeessa oli "-v" = "increase verbosity level"
 ```
 
-![202](/kuvat/202.png)
+![202](kuvat/202.png)
 
 Tulkitsen tuloksia tätä hyödyntäen: [https://www.geeksforgeeks.org/ethical-hacking/nmap-scanning-results/](https://www.geeksforgeeks.org/ethical-hacking/nmap-scanning-results/). Ei ehkä ihan täydellinen ohje, neuvotaan filteröimään portit 1-1000 komennolla "sudo nmap -sS -Pn 1-1000 10.143.85.1", mutta kuvassa näkyy, "Failed to resolve "1-1000". Nmap.org:sta löytyy yksityiskohtaisempia tietoja [https://nmap.org/book/osdetect-usage.html](https://nmap.org/book/osdetect-usage.html).
 
@@ -103,7 +103,7 @@ cd /var/log/apache2/
 sudo tail -F /var/log/apache2/access.log
 ```
 
-![203](/kuvat/203.png)
+![203](kuvat/203.png)
 
 Monessa kohdassa näkyy "Nmap Scripting Engine;...".
 
@@ -121,7 +121,7 @@ sudo grep -ir "Nmap Scripting"
 ```
 Tällä tulos on jo paljon järkevämpi. Löytyy ainoastaan rivit missä on "Nmap Scripting". Kaikki osumat ovat Apachen acces.log:sta.
 
-![204](/kuvat/204.png)
+![204](kuvat/204.png)
 
 ## e) Wire sharking. Sieppaa verkkoliikenne porttiskannatessa Wiresharkilla. Huomaa, että localhost käyttää "Loopback adapter" eli "lo". Tallenna pcap. Etsi kohdat, joilla on sana "nmap" ja kommentoi niitä. Jokaisen paketin jokaista kohtaa ei tarvitse analysoida, yleisempi tarkastelu riittää.
 
@@ -135,7 +135,7 @@ nmap -v -A 127.0.0.1
 ```
 Wiresharkista tallennus päälle ja nmap ajamaan. Tallensin kaappauksen tiedostoon "nmaptesti30102025.pcap". Karvisen ohjeen mukaan laitoin filteriksi **frame contains "nmap"**. Kuvassa kaikki framet, joista löytyy sana "nmap":
 
-![205](/kuvat/205.png)
+![205](kuvat/205.png)
 
 - Kaikki "nmap" sisältävät framet käyttävät HTTP protokollaa.
 - Pyyntöjen tyyppejä: **GET, POST, OPTIONS, PROPFIND**, joista jälkimmäinen ei ole tuttu. [PROPFIND](https://docs.nextcloud.com/server/20/developer_manual/client_apis/WebDAV/basic.html):lla voidaan esimerkiksi pyytää kansion tiedostoista listaus.
@@ -149,7 +149,7 @@ sudo ngrep -d lo -i nmap
 #Toisella ajoin:
 sudo nmap -A localhost
 ```
-![206](/kuvat/206.png)
+![206](kuvat/206.png)
 
 - Ngrep näyttää nyt reaaliajassa loopbackista kaikki rivit, joissa on sana "nmap".
 - Muu liikenne näkyy "#####":nä.
@@ -171,7 +171,7 @@ T 127.0.0.1:50152 -> 127.0.0.1:80 [AP] #4447
   HTML..Host: localhost..Connection: close....
 ```
 
-![207](/kuvat/207.png)
+![207](kuvat/207.png)
 
 - Kuvassa ylhäällä Apachen lokit, joissa ei näy "nmpap":a enää. (Laitoin vielä tuon consolen **Actions -> Find -> "nmap"**, eikä löytynyt)
 - Alhaalla ngrep, jossa näkyy tuo yksi rivi, jossa "nmap".
@@ -184,7 +184,7 @@ cd /usr/share/nmap
 grep -ir "nmaplower"
 ```
 
-![208](/kuvat/208.png)
+![208](kuvat/208.png)
 
 Tästä viisastuneena menen kansioon ja editoin tiedostoa.
 ```bash
@@ -193,7 +193,7 @@ sudoedit http.lua
 ```
 Ctrl+f:llä löysin rivin, joka tuli vastaan aiemmin ngrep:ssä. Muokkaan "nmaplowercheck" -> "HelloWorld" ja tallennan. Kokeilen vielä ajaa nmap:n ja tarkkailen liikennettä. (Löysin tiedostosta myös user-agent rivin, mutta en koskenut siihen.)
 
-![209](/kuvat/209.png)
+![209](kuvat/209.png)
 
 Apache lokissa ei tietenkään näy "nmap", ja ngrep näyttää pelkkää risuaitaa. Tehtävä suoritettu.
 
