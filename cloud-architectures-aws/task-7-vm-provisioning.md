@@ -40,7 +40,7 @@ aws ec2 describe-instances \
 
 ![task7](images/task7.png)
 
-### Template:
+### The template file:
 
 ```yaml
 AWSTemplateFormatVersion: '2010-09-09'
