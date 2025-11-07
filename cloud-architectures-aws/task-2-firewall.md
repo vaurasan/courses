@@ -6,6 +6,8 @@
 
 ```bash
 aws cloudformation validate-template --template-body file://vpc-santeri-vauramo.yaml
+```
+```bash
 aws cloudformation create-stack --stack-name SanteriVPC --template-body file://vpc-santeri-vauramo.yaml --capabilities CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND --parameters ParameterKey=KeyName,ParameterValue=learner-vm-key ParameterKey=EnvironmentName,ParameterValue=Production
 ```
 
