@@ -56,6 +56,10 @@ sudo systemctl start httpd
 
 ### Launch new instance from AMI. Test internet access with instance IP
 
+![task62](images/task62.png)
+
+
+
 ---
 
 - Based on [Public Cloud Solution Architect](https://pekkakorpi-tassi.fi/courses/pkt-arc/pkt-arc-edu-olt-2025-1e/course.html) course by **Pekka Korpi-Tassi** 2025.
