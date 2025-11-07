@@ -40,4 +40,6 @@ ssh -i ./learner-vm-key.pem ec2-user@54.91.46.58
 curl http://169.254.169.254/latest/meta-data/
 ```
 
+![curlaus](images/curlaus.png)
+
 
