@@ -44,7 +44,7 @@ protected-bucket-471112899714-task4
 
 public-bucket-471112899714-task4
 
-# the commands:
+### the commands in my case:
 ```bash
 aws s3api put-object \
     --bucket public-bucket-471112899714-task4 \
@@ -59,3 +59,4 @@ aws s3 ls s3://public-bucket-471112899714-task4/ --recursive
 ```
 
 ![readmetask4](images/readmetask4.png)
+
