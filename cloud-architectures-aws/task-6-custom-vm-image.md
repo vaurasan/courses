@@ -47,7 +47,7 @@ sudo yum update -y
 sudo yum install httpd
 sudo systemctl enable httpd
 sudo systemctl start httpd
-```bash
+```
 ### Navigate to EC2 ip "http://107.21.68.193", you will see apache2 test page if all is correct.
 
 ![task61](images/task61.png)
