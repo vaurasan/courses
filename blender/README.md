@@ -1,3 +1,3 @@
 # Blender
 
-Yksinkertaisia Blenderillä tekemiäni projekteja
+### Mostly homework of the course: **Basic 3D Design with Blender**
