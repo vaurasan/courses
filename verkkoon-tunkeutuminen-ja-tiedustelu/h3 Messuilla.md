@@ -7,11 +7,11 @@ Osallistuin messuille keskiviikkona 5.11.2025.
 
 - Aluksi kävin katsomassa **Philip Stupak**:n esitystä yleisestä kyberturvallisuudesta. 
 
-![301](/kuvat/301.png)
+![301](kuvat/301.png)
 
 - Jäin vielä hetkeksi kuuntelemaan **Geri Revayn** esitystä AI hyökkäyksistä.
 
-![302](/kuvat/302.png)
+![302](kuvat/302.png)
 
 ## Itse asiaan
 
@@ -20,7 +20,7 @@ Osallistuin messuille keskiviikkona 5.11.2025.
   - Turvallisia kulunvalvontatuotteita, joiden mielestäni tulisi olla Suomessa ja maailmalla laajemmassa käytössä.
   - [Yrityksen kotisivuilta](https://www.spear.fi/) löytyy lisää tietoa.
 
-![303](/kuvat/303.png)
+![303](kuvat/303.png)
 
 ### - **2 CATO Networks**
   - Entuudestaan tuntematon yritys, ei ihmekään, koska Suomessa työskentelee yrityksessä noin 1 henkilö.
@@ -28,7 +28,7 @@ Osallistuin messuille keskiviikkona 5.11.2025.
   - [Lisää yrityksen kotisivuilta](https://www.catonetworks.com/?_gl=1*wgmrz3*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAq7HIBhDoARIsAOATDxC-kPQ1XdY-48wdDahEfqkxxUYycbEV-hp7wVmDRYF991m-flH896UaAt6cEALw_wcB&gbraid=0AAAAADfWU5w8cdBN5tRL64cYgY08mMFeL).
   - Mukaan tarttui myös yrityksen logolla varustettu juomapullo.
 
-![304](/kuvat/304.png)
+![304](kuvat/304.png)
 kuva: catonetworks.com
 
 ### - **3 SSH**
@@ -36,7 +36,7 @@ kuva: catonetworks.com
   - Secure Shell ja moni muu tuote on SSH:n käsialaa. Tulevaisuuteen on myös varauduttu esimerkiksi Quantum-Safe kryptografian muodossa.
   - SSH tarjoaa yrityksille esimerkiksi PrivX palvelua, josta lisää [yrityksen kotisivuilla](https://www.ssh.com/ssh-zero-trust-access-key-and-secrets-management).
 
-![305](/kuvat/305.png)
+![305](kuvat/305.png)
 
 ### Lähteet
 
