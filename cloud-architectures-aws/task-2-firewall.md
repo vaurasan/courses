@@ -1,5 +1,9 @@
 # Task 2: Firewall
 
+### Task goals:
+- Public Subnet firewall: allow 22, 80, 443 from the Internet
+- Private Subnet firewall: allow 22, 80, 443 from Public Subnet
+
 ### Upload the CloudFormation template "vpc-santeri-vauramo.yaml" to AWS Sandbox CloudShell.
 
 ### Run the following CLI commands:
