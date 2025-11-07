@@ -33,7 +33,7 @@ aws ec2 describe-instances \
   --output table
 ```
   
-#SSH to the IP, replace the IPv4 address for the one you've got #type "yes"
+### SSH to the IP, replace the IPv4 address for the one you've got #type "yes"
 ```bash
 ssh -i ./learner-vm-key.pem ec2-user@107.21.68.193
 ```
