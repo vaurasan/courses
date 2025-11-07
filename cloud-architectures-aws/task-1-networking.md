@@ -423,3 +423,10 @@ Outputs:
     Description: Security group with no ingress rule
     Value: !Ref NoIngressSecurityGroup
 ```
+
+---
+
+- Based on [Public Cloud Solution Architect](https://pekkakorpi-tassi.fi/courses/pkt-arc/pkt-arc-edu-olt-2025-1e/course.html) course by **Pekka Korpi-Tassi** 2025.
+- [Project Prep Tasks](https://pekkakorpi-tassi.fi/courses/pkt-arc/pkt-arc-edu-olt-2025-1e/iac_deployment.html).
+
+Written by **Santeri Vauramo** 2025.
