@@ -1,4 +1,4 @@
-# Task 3 VM
+# Task 3: VM
 
 ### Task goals:
 
@@ -13,7 +13,7 @@
 
 ### Upload the CloudFormation template "vpc-santeri-vauramo.yaml" to AWS Sandbox CloudShell.
 
-### Run the following CLI commands to create stack and key pair:
+### Run the following CLI commands to create the stack and key pair:
 
 ```bash
 aws cloudformation validate-template --template-body file://vpc-santeri-vauramo.yaml
@@ -39,3 +39,5 @@ ssh -i ./learner-vm-key.pem ec2-user@54.91.46.58
 ```bash
 curl http://169.254.169.254/latest/meta-data/
 ```
+
+
