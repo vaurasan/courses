@@ -8,6 +8,8 @@
 - Upload test files to Protected container by using CLI
 - Include screenshots about Public and Protected containers with test files to task README.txt
 
+---
+
 ### Upload the CloudFormation template "vpc-santeri-vauramo.yaml" and "tfile.txt" to AWS Sandbox CloudShell.
 
 ### Run the following CLI commands to validate and create the stack:
