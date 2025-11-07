@@ -1,4 +1,12 @@
-# Task 4 Object Storage
+# Task 4: Object Storage
+
+### Task goals:
+
+- Create and configure Public Object Storage container
+- Create and configure Protected Object Storage container
+- Upload test files to Public container by using CLI
+- Upload test files to Protected container by using CLI
+- Include screenshots about Public and Protected containers with test files to task README.txt
 
 ### Upload the CloudFormation template "vpc-santeri-vauramo.yaml" and "tfile.txt" to AWS Sandbox CloudShell.
 
