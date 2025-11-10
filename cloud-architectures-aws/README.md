@@ -11,7 +11,7 @@
 All tasks have a similar structure:
 - Task goals
 - How to implement
-- .yaml template as code (this would work if uploaded as "vpc-santeri-vauramo.yaml" file)
+- .yaml template as code (this would work if uploaded to AWS Academy Sandbox & Learner Lab as "vpc-santeri-vauramo.yaml" file, or in real AWS account)
 
 ---
 
