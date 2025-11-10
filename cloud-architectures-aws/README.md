@@ -12,3 +12,9 @@ All tasks have a similar structure:
 - Task goals
 - How to implement
 - .yaml template as code (this would work if uploaded as "vpc-santeri-vauramo.yaml" file)
+
+---
+
+This document may be copied and modified in accordance with the GNU General Public License (version 2 or later). [http://www.gnu.org/licenses/gpl.html](http://www.gnu.org/licenses/gpl.html)
+
+Written by **Santeri Vauramo** 2025.
