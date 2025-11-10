@@ -7,3 +7,9 @@
 - Using AWS Academy Sandbox & Learner Lab. These have limitations to what resources you can deploy, so it is kind of extra educational.
 - Idea is to develop IaC template as the prep tasks progress. CloudFormation or Terraform.
 - I chose to work with AWS CloudFormation .yaml template.
+
+The tasks have a similar structure:
+
+- Task goals
+- How to implement
+- .yaml template as code (this would work if uploaded as "vpc-santeri-vauramo.yaml" file)
