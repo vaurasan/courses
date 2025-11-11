@@ -74,7 +74,7 @@ aws backup list-backup-plans
 
 - Or check from the AWS GUI console.
 
-![backup](/images/backup.png)
+![backup](images/backup.png)
 
 ### The template file:
 
