@@ -36,6 +36,7 @@ sudo airmon-ng check kill #lopettaa häiritsevät prosessit
 sudo airmon-ng start wlan1 #monitor mode päälle
 sudo airmon-ng stop wlan1 #pois päältä
 sudo airodump-ng wlan1 -w scan --manufacturer #kuunnellaan kanavia, "-w" kirjoittaa uuteen tiedostoon, "--manufacturer" kertoo myös verkkokortin valmistajan
+sudo airodump-ng wlan1 --band ag #"b" ja "g" käyttää 2,4GHz taajuutta, "a" käyttää 5GHz taajuutta
 sudo besside-ng -c 6 -b F0:9F:C2:1A:CA:25 wlan1 -v #käytetään WEP ja WPA avainten purkamiseen, "-c" lukitsee kanavan, "-b" tarkentaa tiettyyn MAC-osoitteeseen (b=BSSID)
 
 
@@ -53,6 +54,10 @@ Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimei
 - Käyttämään **Aircrack-ng**:tä [https://www.aircrack-ng.org/doku.php?id=Main](https://www.aircrack-ng.org/doku.php?id=Main]. Aircrack-ng on kokoelma erilaisia työkaluja WiFi-turvallisuuden tutkimiseen.
 - Tekniikoita salasanojen sieppaamiseen WiFi-verkossa.
 - Wiresharkilla voi tutkia liikenteestä kaapattuja .cap tiedostoja.
+
+![402](kuvat/402.png)
+
+- 
 
 **Yllätykset**:
 
