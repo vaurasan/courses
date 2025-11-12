@@ -26,7 +26,7 @@ Itse haasteet löytyvät sivulta: [https://lab.wifichallenge.com/challenges](htt
 
 Piti katsella ohjeita jonkun verran: [https://www.aircrack-ng.org/doku.php?id=airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng).
 
-Hyödyllisiä komentoja, joita tarvitsin tehtävissä:
+Joitakin hyödyllisiä komentoja tehtävissä:
 
 ```bash
 sudo cat "/esimerkki/kansio.txt"
@@ -36,7 +36,7 @@ sudo airmon-ng check kill #lopettaa häiritsevät prosessit
 sudo airmon-ng start wlan1 #monitor mode päälle
 sudo airmon-ng stop wlan1 #pois päältä
 sudo airodump-ng wlan1 -w scan --manufacturer #kuunnellaan kanavia
-sudo service network-manager start #käynnistää uudelleen network managerin
+
 sudo iwconfig #näyttää langattomien interfacejen statuksen, tällä löytyi esimerkiksi tieto, että wlan60 käyttää 5GHz taajuutta
 ```
 
