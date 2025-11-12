@@ -1,5 +1,23 @@
 # h4 Wifi
 
+#### Oma host kokoonpanoni:
+
+| Komponentti | Kuvaus | Lisätiedot |
+| :---        |    :----:   |          ---: |
+| Emolevy | MSI B550-A PRO | ATX, AM4 |
+| Prosessori   | AMD Ryzen 9 5900X | 12-Core 3.70 GHz |
+| RAM   | G.Skill  Ripjaws V |  32GB (4x8GB) DDR4 3200MHz  |
+| Näytönohjain   | Sapphire PULSE AMD Radeon RX 7900 GRE        | 16GB     |
+| Kovalevy   | Kingston 1TB        | A2000 NVMe PCIe SSD M.2      |
+| Kovalevy   | Crucial 512GB        | MX100 SSD     |
+| Kovalevy   | Crucial 256GB        | MX100 SSD     |
+| Virtalähde   | Asus 750W TUF       | ATX 80 Plus      |
+| Kotelo   | Phanteks Enthoo Pro       |  Full Tower      |
+
+- Käyttöjärjestelmä: Windows 11 Pro 25H2
+- VMware® Workstation Pro 25H2 25.0.0.24995812
+- WiFiChallenge Lab v2.3 Debian GNU/Linux 12 (bookworm)
+
 ### a) Tutustu [wifi challenge lab 2.1](https://lab.wifichallenge.com/) harjoitus ympäristöön ja käytä tarvittaessa hyväksesi jo olemassa olevia ohjeita.
 
 Latasin **VMWaren** [https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion):stä ja **VMware v2.3 Direct ZIP**:n [https://lab.wifichallenge.com/README](https://lab.wifichallenge.com/README):stä harjoituksia varten. 
