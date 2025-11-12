@@ -80,25 +80,25 @@ sudo airodump-ng wlan0mon --manufacturer
 
 **Ylhäällä**: [https://github.com/aircrack-ng/aircrack-ng/blob/master/manpages/airodump-ng.8.in](https://github.com/aircrack-ng/aircrack-ng/blob/master/manpages/airodump-ng.8.in)
 
-- BSSID = AP:n eli Access Pointin MAC osoite. (AP = käytännössä reititin tai muu laite, joka tarjoaa yhteyspisteen)
+- **BSSID** = AP:n eli Access Pointin MAC osoite. (AP = käytännössä reititin tai muu laite, joka tarjoaa yhteyspisteen)
 - PWR = Signaalin voimakkuus.
 - Beacons = Kuinka monta Beaconia AP on lähettänyt, useimmiten noin 10 sekunnissa.
 - #Data = Kaapattujen pakettien määrä.
 - #/s = Kuinka monta pakettia sekunnissa viimeisen kymmenen sekunnin aikana.
-- CH = Kanava.
+- **CH** = Kanava.
 - MB = AP:n maksiminopeus.
-- ENC = Salausalgoritmi.
+- **ENC** = Salausalgoritmi.
 - CIPHER = Havaittu salaus, ei pakollinen.
 - AUTH = Autentikointiprotokolla.
-- ESSID = Verkon SSID eli nimi.
+- **ESSID** = Verkon SSID eli nimi.
 
 **Alhaalla** käyttäjien tiedot:
 
-- STATION = Käyttäjän MAC osoite, joka on yhdistynyt AP:hen (BSSID). Tai etsii AP:ta johon yhdistää: "not associated".
+- **STATION** = Käyttäjän MAC osoite, joka on yhdistynyt AP:hen (BSSID). Tai etsii AP:ta johon yhdistää: "not associated".
 - Rate = AP:n ja STATION:n välisen yhteyden viimeisin nopeus. Ensimmäinen numero = BSSID --> STATION, toinen numero = STATION --> BSSID.
 - Lost = Clientiltä tulleet menetetyt framet.
 - Notes = Ylimääräistä tietoa Clientistä.
-- Probes = Verkot, joihin Client yrittää yhdistää tai on parhaillaan yhdistettynä.
+- **Probes** = Verkot, joihin Client yrittää yhdistää tai on parhaillaan yhdistettynä.
 
 **Yllätykset**:
 
