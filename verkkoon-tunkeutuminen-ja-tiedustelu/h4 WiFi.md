@@ -45,6 +45,7 @@ sudo iwconfig #näyttää langattomien interfacejen statuksen, tällä löytyi e
 
 **Opin**:
 
+- Käyttämään **Aircrack-ng**:tä [https://www.aircrack-ng.org/doku.php?id=Main](https://www.aircrack-ng.org/doku.php?id=Main]
 
 
 **Yllätykset**:
@@ -72,6 +73,8 @@ sudo iwconfig #näyttää langattomien interfacejen statuksen, tällä löytyi e
 [https://lab.wifichallenge.com/README](https://lab.wifichallenge.com/README)
 
 [https://lab.wifichallenge.com/challenges](https://lab.wifichallenge.com/challenges)
+
+[https://www.aircrack-ng.org/doku.php?id=Main](https://www.aircrack-ng.org/doku.php?id=Main]
 
 ---
 
