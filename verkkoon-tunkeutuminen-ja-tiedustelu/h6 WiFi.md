@@ -58,6 +58,8 @@ Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimei
 - Tekniikoita salasanojen sieppaamiseen WiFi-verkossa.
 - Wiresharkilla voi tutkia liikenteestä kaapattuja .cap tiedostoja.
 
+![402](kuvat/402.png)
+
 **Kuvassa**:
 
 ```bash
@@ -68,7 +70,7 @@ sudo iwconfig
 -  **Frequency** = Taajuus.
 -  **Tx-Power** = Kertoo kuinka kauas kortti pystyy lähettämään, kerrotaan muodossa **mW** tai **dBm**.
 
-![402](kuvat/402.png)
+![403](kuvat/403.png)
 
 ```bash
 sudo airodump-ng wlan0mon --manufacturer
@@ -92,11 +94,9 @@ sudo airodump-ng wlan0mon --manufacturer
 
 - STATION = Käyttäjän MAC osoite, joka on yhdistynyt AP:hen (BSSID). Tai etsii AP:ta johon yhdistää: "not associated".
 - Rate = AP:n ja STATION:n välisen yhteyden viimeisin nopeus. Ensimmäinen numero = BSSID --> STATION, toinen numero = STATION --> BSSID.
-- 
-
-![403](kuvat/403.png)
-
-
+- Lost = Clientiltä tulleet menetetyt framet.
+- Notes = Ylimääräistä tietoa Clientistä.
+- Probes = Verkot, joihin Client yrittää yhdistää tai on parhaillaan yhdistettynä.
 
 **Yllätykset**:
 
