@@ -24,7 +24,7 @@ Latasin **VMWaren** [https://www.vmware.com/products/desktop-hypervisor/workstat
 
 Itse haasteet löytyvät sivulta: [https://lab.wifichallenge.com/challenges](https://lab.wifichallenge.com/challenges).
 
-Piti katsella ohjeita jonkun verran: [https://www.aircrack-ng.org/doku.php?id=airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng).
+Jouduin katsomaan ohjeita: [https://www.aircrack-ng.org/doku.php?id=airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng). Tosi hyviä vinkkejä aloittelijalle löytyy myös: [https://github.com/koutto/pi-pwnbox-rogueap/wiki](https://github.com/koutto/pi-pwnbox-rogueap/wiki):sta.
 
 Joitakin hyödyllisiä komentoja tehtävissä:
 
@@ -42,28 +42,26 @@ sudo besside-ng -c 6 -b F0:9F:C2:1A:CA:25 wlan1 -v #käytetään WEP ja WPA avai
 sudo iwconfig #näyttää langattomien interfacejen statuksen, tällä löytyi esimerkiksi tieto, että wlan60 käyttää 5GHz taajuutta
 ```
 
+Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimeisissä oli pakko katsoa walkthrough:sta miten homma etenee.
+
+![401](kuvat/401.png)
 
 ### b) Kirjoita raportti siitä mitä opit ja mitkä asiat yllättivät sinut kun tutustuit harjoitukseen.
 
 **Opin**:
 
-- Käyttämään **Aircrack-ng**:tä [https://www.aircrack-ng.org/doku.php?id=Main](https://www.aircrack-ng.org/doku.php?id=Main]. Aircrack-ng on kokoelma erilaisia työkaluja WiFi turvallisuuden arviointiin.
-
+- Käyttämään **Aircrack-ng**:tä [https://www.aircrack-ng.org/doku.php?id=Main](https://www.aircrack-ng.org/doku.php?id=Main]. Aircrack-ng on kokoelma erilaisia työkaluja WiFi-turvallisuuden tutkimiseen.
+- Tekniikoita salasanojen sieppaamiseen WiFi-verkossa.
+- Wiresharkilla voi tutkia liikenteestä kaapattuja .cap tiedostoja.
 
 **Yllätykset**:
 
-
+- Ei sinänsä yllätyksiä, toki hienoa nähdä käytännössä miten vanhempia WLan verkkoja voidaan murtaa.
 
 ### c) Miten suhtautumisesi WLanin turvallisuuteen muuttui sen jälkeen kun teit harjoitukset?
 
-
-
-
-
-
-
-
-
+- Tiedossa oli jo entuudestaan, että langattomat verkot lähettävät tietoa kaikkiin suuntiin. Tällöin ne tulevat aina olemaan askeleen jäljessä turvallisuudessa verrattuna langallisiin verkkoihin, ei tarvita fyysistä kontaktia verkkoon.
+- Ei tietenkään yhtään luottavaisempi olo tullut langattomien verkkojen suhteen, kun pääsi kokeilemaan erilaisia tapoja päästä käsiksi WLan verkkoihin.
 
 
 ### Lähteet
@@ -76,7 +74,9 @@ sudo iwconfig #näyttää langattomien interfacejen statuksen, tällä löytyi e
 
 [https://lab.wifichallenge.com/challenges](https://lab.wifichallenge.com/challenges)
 
-[https://www.aircrack-ng.org/doku.php?id=Main](https://www.aircrack-ng.org/doku.php?id=Main]
+[https://www.aircrack-ng.org/doku.php?id=Main](https://www.aircrack-ng.org/doku.php?id=Main)
+
+[https://github.com/koutto/pi-pwnbox-rogueap/wiki](https://github.com/koutto/pi-pwnbox-rogueap/wiki)
 
 ---
 
