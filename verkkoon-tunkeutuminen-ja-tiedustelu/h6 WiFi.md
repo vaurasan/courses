@@ -70,6 +70,8 @@ sudo iwconfig
 -  **Frequency** = Taajuus.
 -  **Tx-Power** = Kertoo kuinka kauas kortti pystyy lähettämään, kerrotaan muodossa **mW** tai **dBm**.
 
+---
+
 ![403](kuvat/403.png)
 
 ```bash
