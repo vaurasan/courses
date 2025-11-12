@@ -68,6 +68,10 @@ Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimei
 
 ![403](kuvat/403.png)
 
+```bash
+sudo airodump-ng wlan0mon --manufacturer
+```
+
 **Ylhäällä**: [https://github.com/aircrack-ng/aircrack-ng/blob/master/manpages/airodump-ng.8.in](https://github.com/aircrack-ng/aircrack-ng/blob/master/manpages/airodump-ng.8.in)
 
 - BSSID = AP:n eli Access Pointin MAC osoite. (AP = käytännössä reititin tai muu laite, joka tarjoaa yhteyspisteen)
