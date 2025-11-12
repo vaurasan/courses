@@ -20,22 +20,34 @@
 
 ### a) Tutustu [wifi challenge lab 2.1](https://lab.wifichallenge.com/) harjoitus ympäristöön ja käytä tarvittaessa hyväksesi jo olemassa olevia ohjeita.
 
-Latasin **VMWaren** [https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion):stä ja **VMware v2.3 Direct ZIP**:n [https://lab.wifichallenge.com/README](https://lab.wifichallenge.com/README):stä harjoituksia varten. 
+Latasin **VMWaren** [https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion):stä ja **VMware v2.3 Direct ZIP**:n [https://lab.wifichallenge.com/README](https://lab.wifichallenge.com/README):stä harjoituksia varten. Luin ohjeet samaisesta README:sta.
 
+Itse haasteet löytyvät sivulta: [https://lab.wifichallenge.com/challenges](https://lab.wifichallenge.com/challenges).
 
+Piti katsella ohjeita jonkun verran: [https://www.aircrack-ng.org/doku.php?id=airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng).
 
+Hyödyllisiä komentoja, joita tarvitsin tehtävissä:
 
-
-
+```bash
+sudo cat "/esimerkki/kansio.txt"
+sudo airmon-ng #listaa langattomat interfacet
+sudo airmon-ng check #näyttää prosessit, jotka voi häiritä prosessia
+sudo airmon-ng check kill #lopettaa häiritsevät prosessit
+sudo airmon-ng start wlan1 #monitor mode päälle
+sudo airmon-ng stop wlan1 #pois päältä
+sudo airodump-ng wlan1 -w scan --manufacturer #kuunnellaan kanavia
+sudo service network-manager start #käynnistää uudelleen network managerin
+sudo iwconfig #näyttää langattomien interfacejen statuksen, tällä löytyi esimerkiksi tieto, että wlan60 käyttää 5GHz taajuutta
+```
 
 
 ### b) Kirjoita raportti siitä mitä opit ja mitkä asiat yllättivät sinut kun tutustuit harjoitukseen.
 
+**Opin**:
 
 
 
-
-
+**Yllätykset**:
 
 
 
@@ -58,6 +70,8 @@ Latasin **VMWaren** [https://www.vmware.com/products/desktop-hypervisor/workstat
 [https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
 
 [https://lab.wifichallenge.com/README](https://lab.wifichallenge.com/README)
+
+[https://lab.wifichallenge.com/challenges](https://lab.wifichallenge.com/challenges)
 
 ---
 
