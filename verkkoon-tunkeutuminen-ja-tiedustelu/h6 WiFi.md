@@ -106,7 +106,8 @@ sudo airodump-ng wlan0mon --manufacturer
 
 - Tiedossa oli jo entuudestaan, että langattomat verkot lähettävät tietoa kaikkiin suuntiin. Tällöin ne tulevat aina olemaan askeleen jäljessä turvallisuudessa verrattuna langallisiin verkkoihin, ei tarvita fyysistä kontaktia verkkoon.
 - Ei tietenkään yhtään luottavaisempi olo tullut langattomien verkkojen suhteen, kun pääsi kokeilemaan erilaisia tapoja päästä käsiksi WLan verkkoihin.
-asd
+
+---
 
 ### Lähteet
 
