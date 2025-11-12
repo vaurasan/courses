@@ -58,11 +58,11 @@ Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimei
 - Tekniikoita salasanojen sieppaamiseen WiFi-verkossa.
 - Wiresharkilla voi tutkia liikenteestä kaapattuja .cap tiedostoja.
 
+**Kuvassa**:
+
 ```bash
 sudo iwconfig
 ```
-
-**Kuvassa**:
 
 -  **Mode**:Monitor/Managed = Oletuksena **Managed-tilassa**. Täytyy laittaa **Monitor**-tilaan, jotta voidaan tutkia liikennettä.
 -  **Frequency** = Taajuus.
