@@ -85,6 +85,8 @@ Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimei
 **Alhaalla** käyttäjien tiedot:
 
 - STATION = Käyttäjän MAC osoite, joka on yhdistynyt AP:hen (BSSID). Tai etsii AP:ta johon yhdistää: "not associated".
+- Rate = AP:n ja STATION:n välisen yhteyden viimeisin nopeus. Ensimmäinen numero = BSSID --> STATION, toinen numero = STATION --> BSSID.
+- 
 
 **Yllätykset**:
 
