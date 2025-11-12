@@ -1,4 +1,4 @@
-# h4 Wifi
+# h6 Wifi
 
 #### Oma host kokoonpanoni:
 
@@ -30,11 +30,14 @@ Joitakin hyödyllisiä komentoja tehtävissä:
 
 ```bash
 sudo cat "/esimerkki/kansio.txt"
+
 sudo airmon-ng #listaa langattomat interfacet
 sudo airmon-ng check #näyttää prosessit, jotka voivat häiritä tutkimista
 sudo airmon-ng check kill #lopettaa häiritsevät prosessit
 sudo airmon-ng start wlan1 #monitor mode päälle
 sudo airmon-ng stop wlan1 #pois päältä
+
+sudo airodump-ng --help #näyttää kaikki komennot
 sudo airodump-ng wlan1 -w scan --manufacturer #kuunnellaan kanavia, "-w" kirjoittaa uuteen tiedostoon, "--manufacturer" kertoo myös verkkokortin valmistajan
 sudo airodump-ng wlan1 --band ag #"b" ja "g" käyttää 2,4GHz taajuutta, "a" käyttää 5GHz taajuutta
 sudo besside-ng -c 6 -b F0:9F:C2:1A:CA:25 wlan1 -v #käytetään WEP ja WPA avainten purkamiseen, "-c" lukitsee kanavan, "-b" tarkentaa tiettyyn MAC-osoitteeseen (b=BSSID)
@@ -59,9 +62,29 @@ Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimei
 
 **Kuvassa**:
 
--  **Mode**:Monitor/Managed = Oletuksena Managed-tilassa. Täytyy laittaa Monitor-tilaan, jotta voidaan tutkia liikennettä.
+-  **Mode**:Monitor/Managed = Oletuksena **Managed-tilassa**. Täytyy laittaa **Monitor**-tilaan, jotta voidaan tutkia liikennettä.
 -  **Frequency** = Taajuus.
 -  **Tx-Power** = Kertoo kuinka kauas kortti pystyy lähettämään, kerrotaan muodossa **mW** tai **dBm**.
+
+![403](kuvat/403.png)
+
+**Ylhäällä**: [https://github.com/aircrack-ng/aircrack-ng/blob/master/manpages/airodump-ng.8.in](https://github.com/aircrack-ng/aircrack-ng/blob/master/manpages/airodump-ng.8.in)
+
+- BSSID = AP:n eli Access Pointin MAC osoite. (AP = käytännössä reititin tai muu laite, joka tarjoaa yhteyspisteen)
+- PWR = Signaalin voimakkuus.
+- Beacons = Kuinka monta Beaconia AP on lähettänyt, useimmiten noin 10 sekunnissa.
+- #Data = Kaapattujen pakettien määrä.
+- #/s = Kuinka monta pakettia sekunnissa viimeisen kymmenen sekunnin aikana.
+- CH = Kanava.
+- MB = AP:n maksiminopeus.
+- ENC = Salausalgoritmi.
+- CIPHER = Havaittu salaus, ei pakollinen.
+- AUTH = Autentikointiprotokolla.
+- ESSID = Verkon SSID eli nimi.
+
+**Alhaalla** käyttäjien tiedot:
+
+- STATION = Käyttäjän MAC osoite, joka on yhdistynyt AP:hen (BSSID). Tai etsii AP:ta johon yhdistää: "not associated".
 
 **Yllätykset**:
 
@@ -88,6 +111,8 @@ asd
 [https://github.com/koutto/pi-pwnbox-rogueap/wiki](https://github.com/koutto/pi-pwnbox-rogueap/wiki)
 
 [https://www.youtube.com/watch?v=G9cmm5RF6k8](https://www.youtube.com/watch?v=G9cmm5RF6k8)
+
+[https://github.com/aircrack-ng/aircrack-ng/blob/master/manpages/airodump-ng.8.in](https://github.com/aircrack-ng/aircrack-ng/blob/master/manpages/airodump-ng.8.in)
 
 ---
 
