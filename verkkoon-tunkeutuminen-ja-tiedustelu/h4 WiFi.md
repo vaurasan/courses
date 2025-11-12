@@ -24,7 +24,7 @@ Latasin **VMWaren** [https://www.vmware.com/products/desktop-hypervisor/workstat
 
 Itse haasteet löytyvät sivulta: [https://lab.wifichallenge.com/challenges](https://lab.wifichallenge.com/challenges).
 
-Jouduin katsomaan ohjeita: [https://www.aircrack-ng.org/doku.php?id=airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng). Tosi hyviä vinkkejä aloittelijalle löytyy myös: [https://github.com/koutto/pi-pwnbox-rogueap/wiki](https://github.com/koutto/pi-pwnbox-rogueap/wiki):sta.
+Jouduin katsomaan ohjeita: [https://www.aircrack-ng.org/doku.php?id=airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng). Tosi hyviä vinkkejä aloittelijalle löytyy myös: [https://github.com/koutto/pi-pwnbox-rogueap/wiki](https://github.com/koutto/pi-pwnbox-rogueap/wiki):sta. Katsoin myös videon: [https://www.youtube.com/watch?v=G9cmm5RF6k8](https://www.youtube.com/watch?v=G9cmm5RF6k8).
 
 Joitakin hyödyllisiä komentoja tehtävissä:
 
@@ -57,7 +57,11 @@ Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimei
 
 ![402](kuvat/402.png)
 
-- 
+**Kuvassa**:
+
+-  **Mode**:Monitor/Managed = Oletuksena Managed-tilassa. Täytyy laittaa Monitor-tilaan, jotta voidaan tutkia liikennettä.
+-  **Frequency** = Taajuus.
+-  **Tx-Power** = Kertoo kuinka kauas kortti pystyy lähettämään, kerrotaan muodossa **mW** tai **dBm**.
 
 **Yllätykset**:
 
@@ -82,6 +86,8 @@ asd
 [https://www.aircrack-ng.org/doku.php?id=Main](https://www.aircrack-ng.org/doku.php?id=Main)
 
 [https://github.com/koutto/pi-pwnbox-rogueap/wiki](https://github.com/koutto/pi-pwnbox-rogueap/wiki)
+
+[https://www.youtube.com/watch?v=G9cmm5RF6k8](https://www.youtube.com/watch?v=G9cmm5RF6k8)
 
 ---
 
