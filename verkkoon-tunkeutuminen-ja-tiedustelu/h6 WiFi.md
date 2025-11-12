@@ -60,6 +60,10 @@ Tein joitakin tehtäviä, aika nopeasti piti etsiä lähteistä tietoa ja viimei
 
 ![402](kuvat/402.png)
 
+```bash
+sudo iwconfig
+```
+
 **Kuvassa**:
 
 -  **Mode**:Monitor/Managed = Oletuksena **Managed-tilassa**. Täytyy laittaa **Monitor**-tilaan, jotta voidaan tutkia liikennettä.
