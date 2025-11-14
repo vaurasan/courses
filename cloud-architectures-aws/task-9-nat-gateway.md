@@ -112,7 +112,7 @@ aws cloudformation create-stack --stack-name SanteriVPC --template-body file://v
 ```
 
 - Wait for stack to be created.
-- Check the IPv4 addesses of the instances in the AWS GUI console (BastionHost public, SanteriEC2 private):
+- Check the IPv4 addesses of the instances in the AWS GUI console (BastionHost public IP, SanteriEC2 private IP).
 - Start SSH authN agent, load key to the agent.
 - SSH to BastionHost with -A (agent forwarding) --> SSH to SanteriEC2:
 
