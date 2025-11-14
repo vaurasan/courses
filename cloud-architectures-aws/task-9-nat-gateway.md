@@ -56,7 +56,7 @@ Properties:
   ImageId: !FindInMap [RegionMap, !Ref 'AWS::Region', AMI]
   SubnetId: !Ref PrivateSubnet1
   SecurityGroupIds:
-	- !Ref PrivateInstanceSecurityGroup
+  - !Ref PrivateInstanceSecurityGroup
 ```
 
 ### Connecting to the EC2 instance in the private subnet
