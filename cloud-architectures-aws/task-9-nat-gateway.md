@@ -24,39 +24,39 @@
 These have been added to the template:
 
 ```yaml
-  NatGateway1EIP:
-    Type: AWS::EC2::EIP
-    DependsOn: InternetGatewayAttachment
-    Properties:
-      Domain: vpc
+NatGateway1EIP:
+Type: AWS::EC2::EIP
+DependsOn: InternetGatewayAttachment
+Properties:
+  Domain: vpc
 
-  NatGateway1:
-    Type: AWS::EC2::NatGateway
-    Properties:
-      AllocationId: !GetAtt NatGateway1EIP.AllocationId
-      SubnetId: !Ref PublicSubnet1
-	  
-  DefaultPublicRoute:
-    Type: AWS::EC2::Route
-    DependsOn: InternetGatewayAttachment
-    Properties:
-      RouteTableId: !Ref PublicRouteTable
-      DestinationCidrBlock: 0.0.0.0/0
-      GatewayId: !Ref InternetGateway
-	  
-  SanteriEC2:
-    Type: AWS::EC2::Instance
-    DependsOn: 
-      - NatGateway1
-      - DefaultPrivateRoute1
-      - PrivateSubnet1RouteTableAssociation
-    Properties:
-      InstanceType: !Ref InstanceType
-      KeyName: !Ref KeyName
-      ImageId: !FindInMap [RegionMap, !Ref 'AWS::Region', AMI]
-      SubnetId: !Ref PrivateSubnet1
-      SecurityGroupIds:
-        - !Ref PrivateInstanceSecurityGroup
+NatGateway1:
+Type: AWS::EC2::NatGateway
+Properties:
+  AllocationId: !GetAtt NatGateway1EIP.AllocationId
+  SubnetId: !Ref PublicSubnet1
+  
+DefaultPublicRoute:
+Type: AWS::EC2::Route
+DependsOn: InternetGatewayAttachment
+Properties:
+  RouteTableId: !Ref PublicRouteTable
+  DestinationCidrBlock: 0.0.0.0/0
+  GatewayId: !Ref InternetGateway
+  
+SanteriEC2:
+Type: AWS::EC2::Instance
+DependsOn: 
+  - NatGateway1
+  - DefaultPrivateRoute1
+  - PrivateSubnet1RouteTableAssociation
+Properties:
+  InstanceType: !Ref InstanceType
+  KeyName: !Ref KeyName
+  ImageId: !FindInMap [RegionMap, !Ref 'AWS::Region', AMI]
+  SubnetId: !Ref PrivateSubnet1
+  SecurityGroupIds:
+	- !Ref PrivateInstanceSecurityGroup
 ```
 
 ### Connecting to the EC2 instance in the private subnet
