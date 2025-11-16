@@ -65,7 +65,7 @@ With these changes I had the stack created succesfully. Now I still have to be a
 
 I was searching around [AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-with-ec2-instance-connect-endpoint.html) for a solution. They mention using an EC2 Instance Connect Endpoint Service.
 
-However, I want to do this in a different way. [Medium.com](https://medium.com/adessoturkey/how-to-connect-to-private-ec2-instance-database-via-bastion-host-5b05a256f9f7) gives good instructions how to set up a basion host. I am going to try this.
+However, I want to do this in a different way. [Medium.com](https://medium.com/adessoturkey/how-to-connect-to-private-ec2-instance-database-via-bastion-host-5b05a256f9f7) gives good instructions how to set up a bastion host. I am going to try this.
 
 - I will use the same key pair, and same image types.
 - Only difference to the other EC2 instance is: name, security group, subnet, and no user data:
