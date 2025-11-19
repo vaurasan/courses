@@ -18,19 +18,19 @@ Käyttöjärjestelmä: Windows 11 Pro 25H2
 
 Oracle VirtualBox 7.1.12
 
-kali-linux-2025.3-virtualbox-amd64
 
-##
 
-a) Tutustu seuraavaan työkaluun https://github.com/kgretzky/evilginx2 . Vastaa seuraaviin kysymyksiin
+## a) Tutustu seuraavaan työkaluun https://github.com/kgretzky/evilginx2 . Vastaa seuraaviin kysymyksiin
 Asensitko työkalun, jos asensit niin kirjoita miten sen teit.
 Mitä teit työkalun kanssa?
 Onnistuitko huijaamaan liikennettä
-b) Sinulla on käytössäsi mininet-ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
+
+
+
+
+
+## b) Sinulla on käytössäsi mininet-ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
 Kirjoita miten loit mininet ympäristön ja miten toteutit hyökkäyksen.
-
-
-## Otsikko
 
 
 
