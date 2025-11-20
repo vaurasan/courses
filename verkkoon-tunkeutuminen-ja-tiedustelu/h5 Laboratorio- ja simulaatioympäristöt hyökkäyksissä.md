@@ -111,9 +111,6 @@ Loin kaksi nodea tätä varten:
 sudo mn --topo single,2 --mac --switch ovsk --controller remote
 ```
 
-
-
-
 h1:lle annan seuraavan komennon, jolla seuraan portin 80 liikennettä: **`tcpdump -i h1-eth0 -n tcp port 80 -c 1000`** [https://danielmiessler.com/blog/tcpdump](https://danielmiessler.com/blog/tcpdump), [https://nanxiao.github.io/tcpdump-little-book/](https://nanxiao.github.io/tcpdump-little-book/):
 
 - **-i h1-eth0** = Kaapataan kaikki liikenne h1:n eth0 interfacesta.
@@ -122,6 +119,9 @@ h1:lle annan seuraavan komennon, jolla seuraan portin 80 liikennettä: **`tcpdum
 
 Sivulta: [https://www.sciencedirect.com/science/article/pii/S2352340925000460](https://www.sciencedirect.com/science/article/pii/S2352340925000460) löytyi kuinka **`hping3 -S -p 5566 172.17.237.22`** komennolla voi tehdä SYN flood hyökkäystä.
 
+```bash
+hping3 -h #Kertoo että: -S = SYN flag, ja -p = --destport
+```
 h1:llä annoin komennon **`ip a`**, jolla sain selville, että h1:n ip osoite on **10.0.0.1**
 
 Eli minun tapauksessa h2:lta annan tuon komennon porttiin 80:
