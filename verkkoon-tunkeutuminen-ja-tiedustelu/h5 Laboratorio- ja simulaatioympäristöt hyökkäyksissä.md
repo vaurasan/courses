@@ -35,7 +35,9 @@ evilginx
 
 ### - Mitä teit työkalun kanssa?
 
+Huomasin kokeilemalla, että `**help**` komennolla saa asetusvalikon esille ja pääsee suoraan muuttamaan asetuksia. Otin varmuuden vuoksi virtuaalikoneen irti verkosta, että mitään luvatonta ei vahingossa tapahdu.
 
+Katsoin täältä [https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/](https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/) ohjeita miten tuota ohjelmaa voisi käyttää. Ilmeisesti pitäisi asettaa domain. Ohjelma ei hyväksy `**localhost:xxxx**`, `**127.0.0.x**` paikallisia domaineja. En laita julkista domainia ohjelmaan.
 
 
 
@@ -67,6 +69,8 @@ evilginx
 ### Lähteet
 
 [https://github.com/kgretzky/evilginx2?tab=readme-ov-file](https://github.com/kgretzky/evilginx2?tab=readme-ov-file)
+
+[https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/](https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/)
 
 
 ---
