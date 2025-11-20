@@ -21,6 +21,17 @@
 
 ### a) Tutustu seuraavaan työkaluun [https://github.com/kgretzky/evilginx2](https://github.com/kgretzky/evilginx2) . Vastaa seuraaviin kysymyksiin
 ### - Asensitko työkalun, jos asensit niin kirjoita miten sen teit.
+
+[https://nateahess.medium.com/evilginx-on-digitalocean-6f2066e8a468](https://nateahess.medium.com/evilginx-on-digitalocean-6f2066e8a468) tällä ohjeella niinkin yksinkertainen asennus ja käynnistys Kali:lla, kuin:
+
+```bash
+sudo apt update
+sudo apt install evilginx2
+evilginx
+```
+
+![501](kuvat/501.png)
+
 ### - Mitä teit työkalun kanssa?
 ### - Onnistuitko huijaamaan liikennettä
 
