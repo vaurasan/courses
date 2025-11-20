@@ -29,18 +29,23 @@ Oracle VirtualBox 7.1.12
 ### Cornelius 2022: [Decode 433.92 MHz weather station data](https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html)
 
 - [rtl_433](https://github.com/merbanan/rtl_433):lla voidaan dekoodata noin 433MHz:n signaalista laitteen lähettämää tietoa selkokielelle.
-- 
-
+- Universal Radio Hacker:lla pystyy **nauhoittamaan, analysoimaan, muuntamaan,** ja jos laitteisto sallii, myös **uudelleenlähettämään** minkä tahansa signaalin.
+- Signaalia tulee nauhoittaa noin **20-100KHz** ohi tavoitteesta, koska ohjelma laskee tavoitteen ja asetetun taajuuden välistä eroa.
 
 ### Vapaaehtoinen, vaikeahko: Lohner 2019: [Decoding ASK/OOK_PPM Signals with URH and rtl_433](https://github.karllohner.com/SDR/Decoding/Example_2019-01-24/)
 
+- Luin artikkelin, mutta tiivistäminen on hieman hankalaa.
+- Artikkelissa kerrotaan kuinka Universal Radio Hacker:lla ja rtl_433:lla dekoodataan OOK_PPM signaalia.
 
-## Otsikko
+## a) WebSDR. Etäkäytä WebSDR-ohjelmaradiota, joka on kaukana sinusta ja kuuntele radioliikennettä. Radioliikenne tulee siepata niin, että radiovastaanotin on joko eri maassa tai vähintään 400 km paikasta, jossa teet tätä tehtävää. Käytä esimerkkinä julkista, suurelle yleisölle tarkoitettua viestiä, esimerkiksi yleisradiolähetystä. Kerro löytämäsi taajuus, aallonpituus ja modulaatio. Kuvaile askeleet ja ota ruutukaappaus. (Tehtävässä ei saa ilmaista sellaisen viestin sisältöä tai olemassaoloa, joka ei ole tarkoitettu julkiseksi. Voit sen sijaan kuvailla, miten sait julkisen radiolähetyksen kuulumaan kaiuttimistasi. Julkisten, esimerkiksi yleisradiolähetysten sisältöä saa tietysti kuvailla.)
 
+Menin Googlen kautta osoitteeseen [http://websdr.ewi.utwente.nl:8901/](http://websdr.ewi.utwente.nl:8901/). Säätelin nappuloita ja löysin taajuuden **9670.00kHz**, josta kuului **AM** modulaatiolla hyvän kuuloista vanhaa rockia.
 
+**11.18kHz** aallonpituudella signaali oli oikein miellyttävä.
 
+![701](kuvat/701.png)
 
-## Otsikko
+## b) rtl_433. Asenna rtl_433 automaattista analyysia varten. Kokeile, että voit ajaa sitä. './rtl_433' vastaa "rtl_433 version 25.02 branch..."
 
 
 
