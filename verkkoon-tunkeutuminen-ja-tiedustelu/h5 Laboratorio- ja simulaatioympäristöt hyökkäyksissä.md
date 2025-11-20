@@ -29,7 +29,7 @@
 ```bash
 sudo apt update
 sudo apt install evilginx2
-evilginx
+evilginx2
 ```
 
 ![501](kuvat/501.png)
