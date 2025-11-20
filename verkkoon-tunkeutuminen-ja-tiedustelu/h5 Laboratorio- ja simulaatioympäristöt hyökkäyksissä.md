@@ -82,6 +82,38 @@ Eli johonkin asti pääsin tämän kanssa, mutta ei ihan maaliin.
 
 Tätä varten latasin Windowsille [**MobaXterm**](https://mobaxterm.mobatek.net/):n, jotta pääsen käsiksi mininet ympäristöön. Ohjeita katselin [https://mininet.org/](https://mininet.org/):sta
 
+Ensin testailin mininettiä koulun ohjeilla. Eli: 
+
+- VMwaresta mininet kone auki.
+- komento **ryu-manager ryu.app.simple_switch_13** käynnistää verkko-ohjaimen.
+- MobaXtermiin uusi SSH sessio. Yhteys 192.168.244.130, joka on tällä kertaa mininetin antapa IPv4 osoite. MobaXtermissä:
+
+```bash
+mininet@mininet-vm:~$ sudo mn --topo single,3 --mac --switch ovsk --controller remote
+*** Creating network
+*** Adding controller
+Connecting to remote controller at 127.0.0.1:6653
+*** Adding hosts:
+h1 h2 h3
+*** Adding switches:
+s1
+*** Adding links:
+(h1, s1) (h2, s1) (h3, s1)
+*** Configuring hosts
+h1 h2 h3
+*** Starting controller
+c0
+*** Starting 1 switches
+s1 ...
+*** Starting CLI:
+mininet> pingall
+*** Ping: testing ping reachability
+h1 -> h2 h3
+h2 -> h1 h3
+h3 -> h1 h2
+*** Results: 0% dropped (6/6 received)
+```
+
 
 
 
