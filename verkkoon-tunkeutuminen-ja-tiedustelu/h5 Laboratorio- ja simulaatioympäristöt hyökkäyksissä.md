@@ -21,6 +21,7 @@
 - MobaXterm Personal Edition v25.3 Build 5384
 
 ### a) Tutustu seuraavaan työkaluun [https://github.com/kgretzky/evilginx2](https://github.com/kgretzky/evilginx2) . Vastaa seuraaviin kysymyksiin
+
 ### - Asensitko työkalun, jos asensit niin kirjoita miten sen teit.
 
 [https://nateahess.medium.com/evilginx-on-digitalocean-6f2066e8a468](https://nateahess.medium.com/evilginx-on-digitalocean-6f2066e8a468) tällä ohjeella niinkin yksinkertainen asennus ja käynnistys Kali:lla, kuin:
@@ -76,12 +77,10 @@ En onnistunut huijaamaan liikennettä näillä ohjeilla. Navigoidessani tuohon e
 Eli johonkin asti pääsin tämän kanssa, mutta ei ihan maaliin.
 
 ### b) Sinulla on käytössäsi mininet-ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
+
 ### - Kirjoita miten loit mininet ympäristön ja miten toteutit hyökkäyksen.
 
-
-
-
-## Otsikko
+Tätä varten latasin Windowsille [**MobaXterm**](https://mobaxterm.mobatek.net/):n, jotta pääsen käsiksi mininet ympäristöön. Ohjeita katselin [https://mininet.org/](https://mininet.org/):sta
 
 
 
@@ -103,6 +102,10 @@ Eli johonkin asti pääsin tämän kanssa, mutta ei ihan maaliin.
 [https://www.youtube.com/watch?v=z5gLXmXIyH8](https://www.youtube.com/watch?v=z5gLXmXIyH8)
 
 [https://github.com/webdevvx/evilginx-phishlets/blob/main/aws.yaml](https://github.com/webdevvx/evilginx-phishlets/blob/main/aws.yaml)
+
+[https://mobaxterm.mobatek.net/](https://mobaxterm.mobatek.net/)
+
+[https://mininet.org/](https://mininet.org/)
 
 ---
 
