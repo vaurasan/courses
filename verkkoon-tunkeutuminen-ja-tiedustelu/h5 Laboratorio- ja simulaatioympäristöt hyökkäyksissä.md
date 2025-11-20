@@ -16,6 +16,7 @@
 
 - Käyttöjärjestelmä: Windows 11 Pro 25H2
 - VMware® Workstation Pro 25H2 25.0.0.24995812
+- Kali GNU/Linux Rolling 2025.3
 - mininet
 - MobaXterm Personal Edition v25.3 Build 5384
 
@@ -33,6 +34,11 @@ evilginx
 ![501](kuvat/501.png)
 
 ### - Mitä teit työkalun kanssa?
+
+
+
+
+
 ### - Onnistuitko huijaamaan liikennettä
 
 
