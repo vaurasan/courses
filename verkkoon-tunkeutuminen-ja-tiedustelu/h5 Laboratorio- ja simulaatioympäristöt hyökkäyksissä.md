@@ -20,7 +20,7 @@
 - mininet
 - MobaXterm Personal Edition v25.3 Build 5384
 
-### a) Tutustu seuraavaan työkaluun [https://github.com/kgretzky/evilginx2](https://github.com/kgretzky/evilginx2) . Vastaa seuraaviin kysymyksiin
+### a) Tutustu seuraavaan työkaluun [https://github.com/kgretzky/evilginx2](https://github.com/kgretzky/evilginx2). Vastaa seuraaviin kysymyksiin
 
 ### - Asensitko työkalun, jos asensit niin kirjoita miten sen teit.
 
