@@ -122,6 +122,7 @@ Sivulta: [https://www.sciencedirect.com/science/article/pii/S2352340925000460](h
 ```bash
 hping3 -h #Kertoo että: -S = SYN flag, ja -p = --destport
 ```
+
 h1:llä annoin komennon **`ip a`**, jolla sain selville, että h1:n ip osoite on **10.0.0.1**
 
 Eli minun tapauksessa h2:lta annan tuon komennon porttiin 80:
