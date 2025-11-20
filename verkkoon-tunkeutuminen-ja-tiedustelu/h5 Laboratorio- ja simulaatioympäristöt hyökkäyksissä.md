@@ -86,7 +86,7 @@ Ensin testailin mininettiä koulun ohjeilla. Eli:
 
 - VMwaresta mininet kone auki.
 - komento **ryu-manager ryu.app.simple_switch_13** käynnistää verkko-ohjaimen. Ennen sitä piti kuitenkin ajaa **`sudo-s xauth add mininet-vm/unix:10  MIT-MAGIC-COOKIE-1  22ce67f9c6514c99d2903e2b9d97e496`**, koska **ip a** ei antanut ip osoitetta.
-- MobaXtermiin uusi SSH sessio. Yhteys 192.168.244.130, joka on tällä kertaa mininetin antapa IPv4 osoite. MobaXtermissä:
+- MobaXtermiin uusi SSH sessio. Yhteys 192.168.244.130, joka on tällä kertaa mininetin antama IPv4 osoite. MobaXtermissä:
 
 ```bash
 sudo mn --topo single,3 --mac --switch ovsk --controller remote
