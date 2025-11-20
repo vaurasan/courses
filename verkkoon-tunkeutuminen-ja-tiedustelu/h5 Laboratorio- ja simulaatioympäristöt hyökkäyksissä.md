@@ -114,13 +114,13 @@ sudo mn --topo single,2 --mac --switch ovsk --controller remote
 
 
 
-h1:lle annan seuraavan komennon, jolla seuraan portin 80 liikennettä: **tcpdump -i h1-eth0 -n tcp port 80 -c 1000** [https://danielmiessler.com/blog/tcpdump](https://danielmiessler.com/blog/tcpdump), [https://nanxiao.github.io/tcpdump-little-book/](https://nanxiao.github.io/tcpdump-little-book/):
+h1:lle annan seuraavan komennon, jolla seuraan portin 80 liikennettä: **`tcpdump -i h1-eth0 -n tcp port 80 -c 1000`** [https://danielmiessler.com/blog/tcpdump](https://danielmiessler.com/blog/tcpdump), [https://nanxiao.github.io/tcpdump-little-book/](https://nanxiao.github.io/tcpdump-little-book/):
 
 - **-i h1-eth0** = Kaapataan kaikki liikenne h1:n eth0 interfacesta.
 - **-c 1000** = Rajoitetaan kaappaus tuhanteen pakettiin.
 - **-n** = Ei käännä osoitetta nimeksi, tässä tosin hyvin hyödytön.
 
-Sivulta: [https://www.sciencedirect.com/science/article/pii/S2352340925000460](https://www.sciencedirect.com/science/article/pii/S2352340925000460) löytyi kuinka **hping3 -S -p 5566 172.17.237.22** komennolla voi tehdä SYN flood hyökkäystä.
+Sivulta: [https://www.sciencedirect.com/science/article/pii/S2352340925000460](https://www.sciencedirect.com/science/article/pii/S2352340925000460) löytyi kuinka **`hping3 -S -p 5566 172.17.237.22`** komennolla voi tehdä SYN flood hyökkäystä.
 
 h1:llä annoin komennon **`ip a`**, jolla sain selville, että h1:n ip osoite on **10.0.0.1**
 
@@ -129,7 +129,7 @@ Eli minun tapauksessa h2:lta annan tuon komennon porttiin 80:
 hping3 -S -p 80 10.0.0.1
 ```
 
-Kaappaan myös Wiresharkilla liikennettä:
+Kaappaan myös Wiresharkilla liikennettä, kuvassa näkyy TCP SYN tulva, joskin hidas sellainen ja kaikki samasta osoitteesta:
 
 ![503](kuvat/503.png)
 
