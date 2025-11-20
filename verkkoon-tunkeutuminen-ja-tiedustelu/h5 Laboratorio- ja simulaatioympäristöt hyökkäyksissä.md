@@ -85,27 +85,14 @@ Tätä varten latasin Windowsille [**MobaXterm**](https://mobaxterm.mobatek.net/
 Ensin testailin mininettiä koulun ohjeilla. Eli: 
 
 - VMwaresta mininet kone auki.
-- komento **ryu-manager ryu.app.simple_switch_13** käynnistää verkko-ohjaimen.
+- komento **ryu-manager ryu.app.simple_switch_13** käynnistää verkko-ohjaimen. Ennen sitä piti kuitenkin ajaa **`sudo-s xauth add mininet-vm/unix:10  MIT-MAGIC-COOKIE-1  22ce67f9c6514c99d2903e2b9d97e496`**, koska **ip a** ei antanut ip osoitetta.
 - MobaXtermiin uusi SSH sessio. Yhteys 192.168.244.130, joka on tällä kertaa mininetin antapa IPv4 osoite. MobaXtermissä:
 
 ```bash
-mininet@mininet-vm:~$ sudo mn --topo single,3 --mac --switch ovsk --controller remote
+sudo mn --topo single,3 --mac --switch ovsk --controller remote
 *** Creating network
 *** Adding controller
-Connecting to remote controller at 127.0.0.1:6653
-*** Adding hosts:
-h1 h2 h3
-*** Adding switches:
-s1
-*** Adding links:
-(h1, s1) (h2, s1) (h3, s1)
-*** Configuring hosts
-h1 h2 h3
-*** Starting controller
-c0
-*** Starting 1 switches
-s1 ...
-*** Starting CLI:
+...
 mininet> pingall
 *** Ping: testing ping reachability
 h1 -> h2 h3
@@ -114,16 +101,21 @@ h3 -> h1 h2
 *** Results: 0% dropped (6/6 received)
 ```
 
+Suoritin tuon ARP hyökkäyksen suoraan ohjeen mukaan kokeiluksi.
+
+### Itse tehtävään
 
 
 
-##
 
 
 
+h1
+**tcpdump -i h1-eth0 -n tcp port 80 -c 1000**
 
-##
+Sivulta: [https://www.sciencedirect.com/science/article/pii/S2352340925000460](https://www.sciencedirect.com/science/article/pii/S2352340925000460) löytyi kuinka **hping3 -S -p 5566 172.17.237.22** komennolla voi tehdä SYN flood hyökkäystä.
 
+hping3 -S -p 80 10.0.0.1
 
 ### Lähteet
 
