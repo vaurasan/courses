@@ -14,11 +14,10 @@
 | Virtalähde   | Asus 750W TUF       | ATX 80 Plus      |
 | Kotelo   | Phanteks Enthoo Pro       |  Full Tower      |
 
-Käyttöjärjestelmä: Windows 11 Pro 25H2
-
-Oracle VirtualBox 7.1.12
-
-
+- Käyttöjärjestelmä: Windows 11 Pro 25H2
+- VMware® Workstation Pro 25H2 25.0.0.24995812
+- mininet
+- MobaXterm Personal Edition v25.3 Build 5384
 
 ### a) Tutustu seuraavaan työkaluun [https://github.com/kgretzky/evilginx2](https://github.com/kgretzky/evilginx2) . Vastaa seuraaviin kysymyksiin
 ### - Asensitko työkalun, jos asensit niin kirjoita miten sen teit.
@@ -50,6 +49,7 @@ Oracle VirtualBox 7.1.12
 
 ### Lähteet
 
+[https://github.com/kgretzky/evilginx2?tab=readme-ov-file](https://github.com/kgretzky/evilginx2?tab=readme-ov-file)
 
 
 ---
