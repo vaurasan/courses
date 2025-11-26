@@ -22,11 +22,12 @@ APDU rakenne on määritelty [ISO/IEC 7816](https://en.wikipedia.org/wiki/ISO/IE
 - Älykorteissa **APDU** = Application Protocol Data Unit = keskustelua lukijan ja kortin välillä.
 - **APDU command-response pari**
   - **Command APDU** = lukijalta kortille
+    - 0-65535 tavua dataa 
     - 4 tavun header: CLA, INS, P1, P2
       - CLA = 1 tavu, ilmaisee millainen käsky on kyseessä
       - INS = 1 tavu, kertoo käskyn yksilöllisen toiminnon, kuten: "select", "read", tai "write
       - P1 ja P2 = käskyn parametrit
-    - 0-65535 tavua dataa
+    
   - **Response APDU** = kortilta lukijalle
     - Response data = 0-65535 tavua dataa vastauksena
     - 2 pakollista status-tavua: SW1, SW2
