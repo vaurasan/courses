@@ -43,7 +43,7 @@ Joitain tapoja Sebury RFID lukijan hakkerointiin:
 
 - Default admin password = 6-8 merkkiä, factory default: 888888. Tällöin pystymme syöttämään uusia korttitietoja järjestelmään.
 - Kortti, joka ohittaa lukijan logiikan. Esimerkissä kortin UID = FFFFFFFF <-- ei voida poistaa järjestelmästä.
-- Elektromagneettinen pulssi saattaa joskus nollata lukijan muistin ja avata lukon.
+- Elektromagneettinen pulssi saattaa joskus nollata lukijan muistin ja avata lukon. Saattaa myös tuhota lukijan, ei voida suositella kotona kokeiltavaksi.
 - Monia muita tapoja.
 
 Tässä oli hieman eri näkökulmasta lähestytty asiaa. Jos kortin kloonaaminen on vaikeaa, kallista, tai mahdotonta, täytyy keksiä muita keinoja.
