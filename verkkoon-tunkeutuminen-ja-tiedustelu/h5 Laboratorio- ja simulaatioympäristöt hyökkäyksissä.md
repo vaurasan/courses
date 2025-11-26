@@ -136,6 +136,8 @@ Kaappaan myös Wiresharkilla liikennettä, kuvassa näkyy TCP SYN tulva, joskin 
 
 Tässä oli hyvin yksinkertainen TCP SYN-Flood hyökkäys. Lisäksi olisin voinut helposti luoda useamman noden tekemään samaa hyökkäystä, mutta jääköön tähän tällä kertaa.
 
+[Edit: ristiinarvioinnissa erinomainen huomio tästä tehtävästä, puuttui "--flood" tagi, jolla toteutetaan varsinainen SYN-flood. Tällaisenaan tämä oli pelkkä SYN-ACK hyökkäys, jolla ei ole paljoa painoarvoa.]
+
 ### Lähteet
 
 [https://github.com/kgretzky/evilginx2?tab=readme-ov-file](https://github.com/kgretzky/evilginx2?tab=readme-ov-file)
