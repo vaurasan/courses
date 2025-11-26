@@ -6,12 +6,12 @@
 
 
 
-## Tutustu APDU komentojen rakenteeseen (voit käyttää tekoälyä tutustumiseen)
+## b) Tutustu APDU komentojen rakenteeseen (voit käyttää tekoälyä tutustumiseen)
 
 
 
 
-## Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutiset löysit. (Vinkki, useimmat liittyvät henkilökortteihin)
+## c) Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutiset löysit. (Vinkki, useimmat liittyvät henkilökortteihin)
 
 
 
