@@ -37,17 +37,16 @@ APDU rakenne on määritelty [ISO/IEC 7816](https://en.wikipedia.org/wiki/ISO/IE
 
 Luin aluksi uutisia bensavarkaista, kuvitteellisesta kissojen mikrosirun hakkeroinnista (joka on täysin mahdollista), ja taikurista, joka unohti salasanansa ihon alle upotettuun mikrosiruun. Mikään näistä ei ollut riittävän mielenkiintoista. 
 
-Löysin lopulta artikkelin: [Behind Closed Doors: hacking rfid readers](https://i.blackhat.com/Asia-25/Asia-25-Zdunczyk-Behind-Closed-Doors-Bypassing-RFID-Readers.pdf), (kalvot 1-13) jossa kerrotaan miten voidaan sivuuttaa RFID pääsynhallintaa. Tämä ei ole varsinainen uutinen, mutta sitäkin mielenkiintoisempaa luettavaa. Artikkelissa ei keskitytä RFID korttien kloonaamiseen, vaan RFID lukijoiden hakkerointiin.
+Löysin lopulta artikkelin: (kalvot 1-13) [Behind Closed Doors: hacking rfid readers](https://i.blackhat.com/Asia-25/Asia-25-Zdunczyk-Behind-Closed-Doors-Bypassing-RFID-Readers.pdf), jossa kerrotaan miten voidaan sivuuttaa RFID pääsynhallintaa. Tämä ei ole varsinainen uutinen, mutta sitäkin mielenkiintoisempaa luettavaa. Artikkelissa ei keskitytä RFID korttien kloonaamiseen, vaan RFID lukijoiden hakkerointiin.
 
 Joitain tapoja Sebury RFID lukijan hakkerointiin:
 
-- Default admin password = 6-8 merkkiä, factory default: 888888.
+- Default admin password = 6-8 merkkiä, factory default: 888888. Tällöin pystymme syöttämään uusia korttitietoja järjestelmään.
 - Kortti, joka ohittaa lukijan logiikan. Esimerkissä kortin UID = FFFFFFFF <-- ei voida poistaa järjestelmästä.
 - Elektromagneettinen pulssi saattaa joskus nollata lukijan muistin ja avata lukon.
+- Monia muita tapoja.
 
-
-
-
+Tässä oli hieman eri näkökulmasta lähestytty asiaa. Jos kortin kloonaaminen on vaikeaa, kallista, tai mahdotonta, täytyy keksiä muita keinoja.
 
 ### Lähteet
 
@@ -58,8 +57,6 @@ Joitain tapoja Sebury RFID lukijan hakkerointiin:
 [https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit](https://en.wikipedia.org/wiki/Smart_card_application_protocol_data_unit)
 
 [https://i.blackhat.com/Asia-25/Asia-25-Zdunczyk-Behind-Closed-Doors-Bypassing-RFID-Readers.pdf](https://i.blackhat.com/Asia-25/Asia-25-Zdunczyk-Behind-Closed-Doors-Bypassing-RFID-Readers.pdf)
-
-
 
 ---
 
