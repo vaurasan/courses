@@ -14,9 +14,9 @@
 | Virtalähde   | Asus 750W TUF       | ATX 80 Plus      |
 | Kotelo   | Phanteks Enthoo Pro       |  Full Tower      |
 
-Käyttöjärjestelmä: Windows 11 Pro 25H2
-
-Oracle VirtualBox 7.1.12
+- Käyttöjärjestelmä: Windows 11 Pro 25H2
+- Oracle VirtualBox 7.1.12
+- Kali GNU/Linux Rolling 2025.3
 
 ### x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
@@ -47,8 +47,27 @@ Menin Googlen kautta osoitteeseen [http://websdr.ewi.utwente.nl:8901/](http://we
 
 ## b) rtl_433. Asenna rtl_433 automaattista analyysia varten. Kokeile, että voit ajaa sitä. './rtl_433' vastaa "rtl_433 version 25.02 branch..."
 
+Yritin asentaa Kali:in ohjelmaa käyttämällä [https://github.com/merbanan/rtl_433](https://github.com/merbanan/rtl_433) ohjetta Debianille: **sudo apt-get install rtl-433**. Monta erroria tulee:
 
+```bash
+E: Failed to fetch http://http.kali.org/kali/pool/main/s/soapysdr/soapysdr0.8-module-all_0.8.1-6_amd64.deb  Temporary failure resolving 'http.kali.org'
+E: Unable to fetch some archives, maybe run apt update or try with --fix-missing?
+```
 
+Asennusohjesivulta löytyi linkki muille distroille [https://repology.org/project/rtl-433/versions](https://repology.org/project/rtl-433/versions). Tuolta näkyi, että paketin nimi on nimenomaan tuo mitä yritin asentaa. Tässä vaiheessa kuitenkin tajusin, että tästä Kali:sta olin jossakin tämän kurssin tehtävistä laittanut internet yhteyden pois, nyt otin sen takaisin käyttöön. Tämän jälkeen asennus onnistui "**sudo apt-get install rtl-433**".
+
+Nyt **rtl_433 -h** pitäisi antaa tietoja ohjelmasta. Katsoin [Karvisen ohjeesta](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h7-aaltoja-harjaamassa) vielä lisää ja ajoin seuraavat komennot:
+
+```bash
+sudo apt-get -y install atool wget libssl-dev libtool libusb-1.0-0-dev librtlsdr-dev rtl-sdr libsoapysdr-dev
+wget https://github.com/merbanan/rtl_433/releases/download/25.02/rtl_433-soapysdr-openssl3-Linux-amd64-25.02.zip
+aunpack rtl*.zip
+
+rtl_433 -h #testit vielä, että asennus onnistui
+./rtl_433
+```
+
+![702](kuvat/702.png)
 
 ##
 
@@ -68,6 +87,7 @@ Menin Googlen kautta osoitteeseen [http://websdr.ewi.utwente.nl:8901/](http://we
 
 [https://github.com/merbanan/rtl_433](https://github.com/merbanan/rtl_433)
 
+[https://github.com/merbanan/rtl_433](https://github.com/merbanan/rtl_433)
 
 
 ---
