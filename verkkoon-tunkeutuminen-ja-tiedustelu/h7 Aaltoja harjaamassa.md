@@ -56,7 +56,7 @@ E: Unable to fetch some archives, maybe run apt update or try with --fix-missing
 
 Asennusohjesivulta löytyi linkki muille distroille [https://repology.org/project/rtl-433/versions](https://repology.org/project/rtl-433/versions). Tuolta näkyi, että paketin nimi on nimenomaan tuo mitä yritin asentaa. Tässä vaiheessa kuitenkin tajusin, että tästä Kali:sta olin jossakin tämän kurssin tehtävistä laittanut internet yhteyden pois, nyt otin sen takaisin käyttöön. Tämän jälkeen asennus onnistui "**sudo apt-get install rtl-433**".
 
-Nyt **rtl_433 -h** pitäisi antaa tietoja ohjelmasta. Katsoin [Karvisen ohjeesta](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h7-aaltoja-harjaamassa) vielä lisää ja ajoin seuraavat komennot:
+Nyt **rtl_433 -h** pitäisi antaa tietoja ohjelmasta. Tässä vaiheessa en saanut komennolla **rtl_433 -h** silti mitään vastausta. Katsoin [Karvisen ohjeesta](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h7-aaltoja-harjaamassa) vielä lisää ja ajoin seuraavat komennot:
 
 ```bash
 sudo apt-get -y install atool wget libssl-dev libtool libusb-1.0-0-dev librtlsdr-dev rtl-sdr libsoapysdr-dev
@@ -69,7 +69,7 @@ rtl_433 -h #testit vielä, että asennus onnistui
 
 ![702](kuvat/702.png)
 
-##
+## c) Automaattinen analyysi. Mitä tässä näytteessä tapahtuu? Mitä tunnisteita (id yms) löydät? [Converted_433.92M_2000k.cs8](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/Converted_433.92M_2000k.cs8). Analysoi näyte 'rtl_433' ohjelmalla.
 
 
 
