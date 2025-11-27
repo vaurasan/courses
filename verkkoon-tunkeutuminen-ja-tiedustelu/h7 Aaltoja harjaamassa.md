@@ -86,7 +86,60 @@ Jos pitäisi arvailla mitä tämä kaikki tarkoittaa, sanoisin, että kyseessä 
 
 Nopea haku "KlikAanKlikUit-Switch" löytää [https://www.mediamarkt.nl/nl/product/_klikaanklikuit-compact-wireless-socket-switch-set-apc3-2300r-draadloze-schakelaars-afstandsbediening-1536684.html](https://www.mediamarkt.nl/nl/product/_klikaanklikuit-compact-wireless-socket-switch-set-apc3-2300r-draadloze-schakelaars-afstandsbediening-1536684.html) sivun. Kyseessä on kaukosäätöinen pistorasia.
 
-##
+## d) Too compex 16? Olet nauhoittanut näytteen 'urh' -ohjelmalla .complex16s-muodossa. Muunna näyte rtl_433-yhteensopivaan muotoon ja analysoi se. Näyte [Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s)
+
+Karvisen ohjeen mukaan yritin asentaa Universal Radio Hacker ohjelman:
+
+```bash
+sudo apt-get update
+sudo apt-get -y install pipx
+pipx install urh
+
+Fatal error from pip prevented installation. Full pip output in file:
+    /home/kali/.local/state/pipx/log/cmd_2025-11-27_07.09.21_pip_errors.log
+
+pip seemed to fail to build package:
+    'urh'
+
+Some possibly relevant errors from pip install:
+    error: subprocess-exited-with-error
+    ERROR: Failed to build 'urh' when getting requirements to build wheel
+
+Error installing urh.
+```
+
+Löysin itseni sivulle: [https://pypi.org/project/urh/#Installation](https://pypi.org/project/urh/#Installation). Kokeilen vaihtoehtoista asennustapaa:
+
+```bash
+git clone https://github.com/jopohl/urh/
+cd urh
+python setup.py install
+
+Cloning into 'urh'...
+remote: Enumerating objects: 25311, done.
+remote: Counting objects: 100% (739/739), done.
+remote: Compressing objects: 100% (395/395), done.
+remote: Total 25311 (delta 469), reused 344 (delta 343), pack-reused 24572 (from 3)
+Receiving objects: 100% (25311/25311), 54.45 MiB | 16.28 MiB/s, done.
+Resolving deltas: 100% (17984/17984), done.
+You need Cython to build URH's extensions!
+You can get it e.g. with python3 -m pip install cython.
+```
+
+Pari muutakin ohjetta katsoin ja asentelin riippuvuuksia, mikään näistä ei Kali:lle kelvannut. Löysin lopulta sivun: [https://kalilinuxtutorials.com/urh-universal-radio-hacker/](https://kalilinuxtutorials.com/urh-universal-radio-hacker/), jossa kerrottiin seuraavaa:
+
+```bash
+Without installation
+To execute the Universal Radio Hacker without installation, just run:
+
+git clone https://github.com/jopohl/urh/
+cd urh/src/urh
+./main.py
+```
+
+Ilmeisesti tämä oli nyt **ilman asennusta**, joka tapauksessa ohjelma käynnistyi ja nyt pääsen toivottavasti hommiin.
+
+
 
 
 ### Lähteet
