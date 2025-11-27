@@ -145,7 +145,12 @@ Lähdin aiemman X-kohdan Karlin ohjeen mukaan purkamaan tuota signaalia.
 - Vaihdoin Signal view:n **Spectogram**:ksi.
 - Valitsin signaalin, hiiren oikeasta valitsin **Apply Bandpass Filter**.
 - Jakoavain symbolista muutin pause **threshold** arvon 8 --> 0
-- 
+- Zoomasin lähemmäs ja valitsin 2046 samplen pituuden kohdasta, jossa näkyy tapahtumia. 2046 jaettuna kuudella = 341, joten kirjoitan **Samples/Symbols** kenttään 341. (Ohjeessa puhutaan Bit Lenghtistä, mutta tässä tuo taitaa olla sama, niin lukee kun vie hiiren kursorin kentän päälle)
+- Vaihdoin Pause Threshold:n 4:n.
+- Tein ohjeen mukaan dekoodauksen ja tallensin nimellä.
+- En löydä minne tuo dekoodaus tallentui. Tässä vaiheessa huomasin, että seuraavassa tehtävässä vasta pitää asentaa urh, jonka tässä jo tein. Tulipahan räplättyä ohjelmaa.
+
+
 
 
 ### Lähteet
