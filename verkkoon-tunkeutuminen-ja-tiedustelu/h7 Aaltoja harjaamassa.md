@@ -71,8 +71,20 @@ rtl_433 -h #testit vielä, että asennus onnistui
 
 ## c) Automaattinen analyysi. Mitä tässä näytteessä tapahtuu? Mitä tunnisteita (id yms) löydät? [Converted_433.92M_2000k.cs8](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/Converted_433.92M_2000k.cs8). Analysoi näyte 'rtl_433' ohjelmalla.
 
+rtl_433 ohjeesta löysin komennon, jolla saa lataamani tiedoston auki: **rtl_433 -K FILE -r Converted_433.92M_2000k.cs8**. Löysin tunnisteita:
 
+- tag: Converted_433.92M <- Tämä sama kaikissa.
+- model: Proove-Security, Nexa-Security, KlikAanKlikUit-Switch.
+- Channel: 0 (KlikAanKlikUit-Switch), 3 (Proove-Security ja Nexa-Security).
+- id: **8785315**, sama kaikissa, joissa on id.
+- House Code: **8785315** <- sama kuin id. Eli tässä tapauksessa House Code = id, riippuen laitteesta/lähettimestä.
+- State: OFF. Ilmeisesti järjestelmä on kytketty pois päältä.
 
+![703](kuvat/703.png)
+
+Jos pitäisi arvailla mitä tämä kaikki tarkoittaa, sanoisin, että kyseessä on jonkin talon hälytysjärjestelmä.
+
+Nopea haku "KlikAanKlikUit-Switch" löytää [https://www.mediamarkt.nl/nl/product/_klikaanklikuit-compact-wireless-socket-switch-set-apc3-2300r-draadloze-schakelaars-afstandsbediening-1536684.html](https://www.mediamarkt.nl/nl/product/_klikaanklikuit-compact-wireless-socket-switch-set-apc3-2300r-draadloze-schakelaars-afstandsbediening-1536684.html) sivun. Kyseessä on kaukosäätöinen pistorasia.
 
 ##
 
@@ -87,7 +99,6 @@ rtl_433 -h #testit vielä, että asennus onnistui
 
 [https://github.com/merbanan/rtl_433](https://github.com/merbanan/rtl_433)
 
-[https://github.com/merbanan/rtl_433](https://github.com/merbanan/rtl_433)
 
 
 ---
