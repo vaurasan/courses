@@ -139,7 +139,13 @@ cd urh/src/urh
 
 Ilmeisesti tämä oli nyt **ilman asennusta**, joka tapauksessa ohjelma käynnistyi ja nyt pääsen toivottavasti hommiin.
 
+Lähdin aiemman X-kohdan Karlin ohjeen mukaan purkamaan tuota signaalia. 
 
+- Avasin lataamani tiedoston Universal Radio Hackeriin.
+- Vaihdoin Signal view:n **Spectogram**:ksi.
+- Valitsin signaalin, hiiren oikeasta valitsin **Apply Bandpass Filter**.
+- Jakoavain symbolista muutin pause **threshold** arvon 8 --> 0
+- 
 
 
 ### Lähteet
