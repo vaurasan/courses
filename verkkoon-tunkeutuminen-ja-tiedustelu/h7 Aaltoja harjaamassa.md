@@ -175,7 +175,7 @@ Ei varmaan mennyt ihan täysin oikein, mutta ainakin saan nyt tiedoston avattua 
 
 ## e) Ultimate. Asenna URH, the Ultimate Radio Hacker.
 
-Tämä tuli tavallaan tehtyä jo edellisessä tehtävässä. Asensin silti uusimman Debianin VirtualBoxiin ja en saanut urh asennusta siltikään toimimaan. Tein jopa tämän ohjeen mukaan: [https://snapcraft.io/install/urh/debian](https://snapcraft.io/install/urh/debian) pienellä riskillä. Snapcraftin ohjeen mukaan tosin sain consolin mukaan urh:n asennettua, mutta en saa sitä käynnistettyä ainakaan "urh" komennolla. Siirryn kuitenkin takaisin käyttämään Kali:a, kun asennus ei onnistunut.
+Tämä tuli tavallaan tehtyä jo edellisessä tehtävässä. Asensin silti uusimman Debianin VirtualBoxiin ja en saanut urh asennusta siltikään toimimaan. Tein jopa tämän ohjeen mukaan: [https://snapcraft.io/install/urh/debian](https://snapcraft.io/install/urh/debian) pienellä riskillä. Snapcraftin ohjeen mukaan tosin sain consolin mukaan urh:n asennettua, mutta en saa sitä käynnistettyä ainakaan "urh" komennolla, vaikka Karvisen ohjeen mukaan käynnistin consolin uudelleen. Siirryn kuitenkin takaisin käyttämään Kali:a ja "without installation"-metodia, kun asennus ei onnistunut.
 
 ## Tarkastele näytettä 1-on-on-on-HackRF-20250412_113805-433_912MHz-2MSps-2MHz.complex16s. Siinä Nexan pistorasian kaukosäätimen valon 1 ON -nappia on painettu kolmesti. Käytä Ultimate Radio Hacker 'urh' -ohjelmaa.
 
