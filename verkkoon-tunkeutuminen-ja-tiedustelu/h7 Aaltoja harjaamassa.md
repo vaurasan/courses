@@ -187,18 +187,17 @@ Tässä pakko lukea ohjetta: [https://github.com/jopohl/urh/releases/download/v2
 
 - Nauhoite on 5,42 sekuntia pitkä.
 - Jos oikein ymmärsin, **Bit lenght**, eli **Samples/Symbol** = 522, koska valitsin yhden bitin, sain lukeman "522 selected". Joten laitan bit lenghtiksi 522.
-- Taajuutta varten vaihdoin Signal view:n **Spectrogram**:ksi. Valittuani koko taajuusalueen, taajuudeksi ilmoitetaan 1MHz.
+- Taajuutta varten vaihdoin Signal view:n **Spectrogram**:ksi. Valittuani koko taajuusalueen, lukemaksi tulee 1MHz.
 - Milloin nauhoitettu: tiedoston nimestä päätellen 12.4.2025.
-- Silmämääräisesti näyte näyttää juuri siltä, että on kolme kertaa tehty jotakin lyhyen ajan sisällä.
+- Silmämääräisesti kaukaa tarkasteltua näyte näyttää juuri siltä, että on kolme kertaa tehty jotakin lyhyen ajan sisällä.
 
 ### g) Bittistä. Demoduloi signaali niin, että saat raakabittejä. Mikä on oikea modulaatio? Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin. (Monissa singaaleissa on line encoding, eli lopullisia bittejä varten näitä "raakabittejä" on vielä käsiteltävä)
 
 ![706](kuvat/706.png)
 
-- Bitithän näkyvät automaattisesti signaaline alapuolella.
-- Bitin pituus 522.
-- 
-
+- Bitithän näkyvät automaattisesti signaalin alapuolella.
+- Bitin pituus 522 mikrosekuntia. Vuorokaudessa on 24 tuntia, eli 86400 sekuntia. 522 mikrosekuntia mahtuu vuorokauteen noin 165 miljoonaa kertaa.
+- Oikea modulaatio on selkeästi **ASK**, muilla nollat ja ykköset eivät näy oikein. FSK ja PSK näyttää bitit hieman rosoisena. Muillakin modulaatioilla keskikohtaa pystyy siirtämään ylös ja alas, mutta ASK osuu suoraan oikeaan, jossa nollat ja ykköset ovat selkeästi eroteltuja.
 
 ### Lähteet
 
