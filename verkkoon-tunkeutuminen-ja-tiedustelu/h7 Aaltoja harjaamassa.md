@@ -168,7 +168,9 @@ Ei toiminut sekään. Luin lisää manuaalisivuja. README.md:stä ja **rtl_433 -
 rtl_433 -r Muunnos-433MHz_1MHz.cs8 -s 2MHz
 ```
 
-Nyt toimii
+Nyt toimii, näyttäisi olevan samaa dataa, kuin aiemmassa tehtävässä.
+
+![704](kuvat/704.png)
 
 
 ### Lähteet
