@@ -204,6 +204,10 @@ Tässä pakko lukea ohjetta: [https://github.com/jopohl/urh/releases/download/v2
 - Bitin pituus 522 mikrosekuntia. Vuorokaudessa on 24 tuntia, eli 86400 sekuntia. 522 mikrosekuntia mahtuu vuorokauteen noin 165 miljoonaa kertaa.
 - Oikea modulaatio on selkeästi **ASK**, muilla nollat ja ykköset eivät näy oikein. FSK ja PSK näyttää bitit hieman rosoisena. Muillakin modulaatioilla keskikohtaa pystyy siirtämään ylös ja alas, mutta ASK osuu suoraan oikeaan, jossa nollat ja ykköset ovat selkeästi eroteltuja.
 
+![707](kuvat/707.png)
+
+Kuvassa **ASK**-modulaatio.
+
 ### Lähteet
 
 [https://youtube.com/watch?t=199&v=sbqMqb6FVMY&feature=youtu.be](https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s)
