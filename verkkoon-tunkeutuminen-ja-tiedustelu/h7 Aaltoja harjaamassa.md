@@ -150,7 +150,25 @@ Lähdin aiemman X-kohdan Karlin ohjeen mukaan purkamaan tuota signaalia.
 - Tein ohjeen mukaan dekoodauksen ja tallensin nimellä.
 - En löydä minne tuo dekoodaus tallentui. Tässä vaiheessa huomasin, että seuraavassa tehtävässä vasta pitää asentaa urh, jonka tässä jo tein. Tulipahan räplättyä ohjelmaa.
 
+Yritin virallisen ohjeen mukaan avata tiedostoa -X ja -G flageilla tuloksetta. Kuitenkin tältä sivulta: [https://github.com/merbanan/rtl_433/blob/master/docs/IQ_FORMATS.md](https://github.com/merbanan/rtl_433/blob/master/docs/IQ_FORMATS.md) löytyy tieto, että **.complex16s** = **.cs8**. Samalla sivulla lukee, että yleiset sample ratet ovat 250 KHz, 1024 KHz ja 1 MHz. Yritän tuon sivun ohjeen mukaan muuttaa tiedoston luettavaan muotoon, lähinnä 2MHz --> 1MHz:
 
+```bash
+rtl_433 -w Muunnos-433_92MHz-2MSps-1MHz.cs8 Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s
+```
+
+Tämä ei toiminut oikein missään muodossa, joten yritin muuttaa vain brute-forcella nimen:
+
+```bash
+mv Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s Muunnos-433MHz_1MHz.cs8
+```
+
+Ei toiminut sekään. Luin lisää manuaalisivuja. README.md:stä ja **rtl_433 -h**:sta löytyy tieto, että **-s** flagilla saa sample raten ilmoitettua, ohjelma yrittää automaattisesti avata sitä 1MHz ratella. Käytän siis flagia -s 2MHz, jolla ohjelma osaa lukea tiedoston oikein:
+
+```bash
+rtl_433 -r Muunnos-433MHz_1MHz.cs8 -s 2MHz
+```
+
+Nyt toimii
 
 
 ### Lähteet
