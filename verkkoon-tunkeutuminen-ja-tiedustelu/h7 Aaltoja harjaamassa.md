@@ -17,6 +17,7 @@
 - Käyttöjärjestelmä: Windows 11 Pro 25H2
 - Oracle VirtualBox 7.1.12
 - Kali GNU/Linux Rolling 2025.3
+- Debian GNU/Linux Trixie 13.1
 
 ### x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
@@ -171,6 +172,10 @@ rtl_433 -r Muunnos-433MHz_1MHz.cs8 -s 2MHz
 Nyt toimii, näyttäisi olevan samaa dataa, kuin aiemmassa tehtävässä.
 
 ![704](kuvat/704.png)
+
+## e) Ultimate. Asenna URH, the Ultimate Radio Hacker.
+
+Tämä tuli tavallaan tehtyä jo. Voisin silti siirtyä käyttämään Debiania, josko siihen onnistuisi tuo asennus ihan oikeasti. Näemmä ei ole Debian 13:a tällä koneella, joten asennan sen huumorilla VirtualBoxiin.
 
 
 ### Lähteet
