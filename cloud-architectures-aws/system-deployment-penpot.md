@@ -87,6 +87,15 @@ echo "Port 6060: $(netstat -tuln | grep 6060 | wc -l) listeners" && \
 echo "Disk: $(df -h / | awk 'NR==2 {print $5}') used"
 ```
 
+### Proof of work
+
+Here is a proof of the system in use and working:
+
+![penpot](images/PenPot.png)
+
+
+### Contents of the .yaml file:
+
 ```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: PenPot System deployment using Nginx as a reverse proxy in AWS VPC
