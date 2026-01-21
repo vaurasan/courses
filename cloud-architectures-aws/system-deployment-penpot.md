@@ -509,11 +509,6 @@ Outputs:
     Value: !Sub http://${NginxInstance.PublicIp}
 ```
 
-
-
-
-
-
 ---
 
 This document may be copied and modified in accordance with the GNU General Public License (version 2 or later). [http://www.gnu.org/licenses/gpl.html](http://www.gnu.org/licenses/gpl.html)
