@@ -11,7 +11,7 @@
 
 I got to use the AWS calculator for this one. This is not anywhere near a system that makes sense, but at least I got to see in a simulation that tiny mistakes in the planning phase can be devastating to total yearly costs. These are all estimates of course.
 
-![kuva](/images/task10.png)
+![kuva](images/task10.png)
 ---
 
 This document may be copied and modified in accordance with the GNU General Public License (version 2 or later). [http://www.gnu.org/licenses/gpl.html](http://www.gnu.org/licenses/gpl.html)
