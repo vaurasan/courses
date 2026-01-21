@@ -89,7 +89,7 @@ echo "Disk: $(df -h / | awk 'NR==2 {print $5}') used"
 
 ### Proof of work
 
-Here is proof of the system in use and working:
+Here is proof of the system in use and working. This is a screenshot of the AWS Management Console showing the 3 EC2 instances, in the lower browser window you can see connection to the **Nginx** instances IPv4 address and the PenPot app working:
 
 ![penpot](images/PenPot.png)
 
