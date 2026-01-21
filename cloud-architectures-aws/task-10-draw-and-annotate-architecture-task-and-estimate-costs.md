@@ -14,6 +14,7 @@ I got to use the AWS calculator for this one. This is not anywhere near a system
 The S3 buckets costs in this system are around 330$ per month. The backups are overkill for this kind of system.
 
 ![kuva](images/task10.png)
+
 ---
 
 This document may be copied and modified in accordance with the GNU General Public License (version 2 or later). [http://www.gnu.org/licenses/gpl.html](http://www.gnu.org/licenses/gpl.html)
