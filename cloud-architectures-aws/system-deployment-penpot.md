@@ -89,7 +89,7 @@ echo "Disk: $(df -h / | awk 'NR==2 {print $5}') used"
 
 ### Proof of work
 
-Here is a proof of the system in use and working:
+Here is proof of the system in use and working:
 
 ![penpot](images/PenPot.png)
 
