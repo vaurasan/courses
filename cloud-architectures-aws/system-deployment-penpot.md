@@ -78,14 +78,6 @@ docker-compose restart
 ```bash
 docker-compose -f docker-compose.yaml up --dry-run
 ```
-- Crazy health check:
-```bash
-echo "Docker: $(systemctl is-active docker)" && \
-echo "Containers: $(docker ps --format 'table {{.Names}}\t{{.Status}}' | grep penpot | wc -l) running" && \
-echo "Port 9001: $(netstat -tuln | grep 9001 | wc -l) listeners" && \
-echo "Port 6060: $(netstat -tuln | grep 6060 | wc -l) listeners" && \
-echo "Disk: $(df -h / | awk 'NR==2 {print $5}') used"
-```
 
 ### Proof of work
 
